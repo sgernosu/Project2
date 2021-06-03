@@ -16,6 +16,12 @@ def print_board(cards)
   puts
 end
 
+# Prints the win screen for whoever won
+def print_winner(players)
+  winner = find_winner(players)
+  puts "#{winner} wins!"
+end
+
 # Prints the settings menu, where the user can add, rename, and remove players
 def settings_menu(players)
   puts "1) Add Player\n2) Rename Player\n3) Remove Player\n4) Back"
